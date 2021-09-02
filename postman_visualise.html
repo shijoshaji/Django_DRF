@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- PASTE THIS IN POSTMAN TOOL TEST - START -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- PASTE THIS IN POSTMAN TOOL TEST - END -->
+
+
+</head>
+
+<body>
+    <!-- PASTE THIS IN POSTMAN TOOL TEST - START -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col mb-4">
+                <h1>Todo List</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            {{#each response}}
+                <div class="col-sm-6">
+                    <div class="card border-success mb-6" style="max-width: 18rem;">
+                        <div class="card-header">{{id}}</div>
+                        <div class="card-body text-success">
+                            <h5 class="card-title">{{title}}</h5>
+                            <p>
+                                <a href="#" class="btn btn-success" role="button">
+                                    <span class="material-icons">
+                                        done
+                                    </span> </a>
+
+                                <a href="#" class="btn btn-danger" role="button">
+                                    <span class="material-icons">
+                                        delete
+                                    </span> </a>
+                                <a href="#" class="btn btn-info" role="button">
+                                    <span class="material-icons">
+                                        edit
+                                    </span> </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            {{/each}}
+
+
+        </div>
+    </div>
+    <!-- PASTE THIS IN POSTMAN TOOL TEST - END -->
+</body>
+
+</html>
